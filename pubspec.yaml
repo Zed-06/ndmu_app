@@ -1,0 +1,38 @@
+name: ndmu_app
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  http: ^0.13.6
+  flutter_dotenv: ^5.1.0
+  table_calendar: ^3.0.0
+  qr_flutter: ^4.1.0
+  provider: ^6.1.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/ndmu.png
+    - assets/smurf.jpg
+    - .env
+    - assets/iso.jpg
+    - assets/clearance_req.jpg
+    - assets/comelec_ext.jpg
+
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
+        - asset: assets/fonts/Montserrat-Bold.ttf
+          weight: 700
